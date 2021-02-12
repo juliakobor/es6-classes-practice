@@ -25,8 +25,8 @@ The pin code property can be set but it should be never revealed!
  
 #### Bonus
 
-Give the `Atm` class a `backupAccount` property that can, optionally, contain a reference to another instance of the class, determined by some input
-* Whenever an ATM's balance goes below zero, it will remove money from the instance stored in `backupAccount` so that its balance goes back to zero.
+Give the `BankAccount ` class a `backupAccount` property that can, optionally, contain a reference to another instance of the class, determined by some input
+* Whenever an BankAccount's balance goes below zero, it will remove money from the instance stored in `backupAccount` so that its balance goes back to zero.
 * This should trigger a withdrawal in the back up account equal to the amount of money that was withdrawn from the original account.
 
 #### Bonus 2
