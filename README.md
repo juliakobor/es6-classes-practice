@@ -1,6 +1,6 @@
-# Make a BankAccount Class
+# BankAccount Class
 
-For this exercise you will be creating an `BankAccount` class.
+## For this exercise you will be creating an `BankAccount` class.
 
 It will have the following properties...
 * `name` (e.g., "Joe's main account"), which should be determined by some input
@@ -17,7 +17,7 @@ It should have the following methods...
 * `showBalance`, which should print the amount of money in the bank to the console.
 
 The `BankAccount` class has a `transactionHistory` property which keeps track of the withdrawals and deposits made to the account.
-* Make sure to indicate whether the transaction increased or decreased the amount of money in the bank.
+* Make sure to indicate whether the transaction increased or decreased the amount of money in the bank account!
 
 The pin code property can be set but it should be never revealed!
 - if the owner wants to change the pin, the input should be validated (4-6 long digit string)! Use a setter!
