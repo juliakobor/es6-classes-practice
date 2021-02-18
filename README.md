@@ -6,7 +6,7 @@ It will have the following properties...
 * `name` (e.g., "Joe's main account"), which should be determined by some input
 * `money`, which should start out as `0`
 * `owner`, which conains a AccountOwner object containing the owner's full name, birth date, Id number. Create a class for it too!
-* `pin`, which is 4-to-6 digit long string property and also private  
+* `pin`, which is 4-to-6 digit string. 
 
 These field are mandatory to create an account!
 Put each class in a separate module!
@@ -20,8 +20,8 @@ The `BankAccount` class has a `transactionHistory` property which keeps track of
 * Make sure to indicate whether the transaction increased or decreased the amount of money in the bank account!
 
 The pin code property can be set but it should be never revealed!
-- if the owner wants to change the pin, the input should be validated (4-6 long digit string)! Use a setter!
-- if the format was wring it should throw an error with a message "Wrong PIN!"
+- if the owner wants to change the pin, the input should be validated - 4-6 long digits.
+- if the input is invalid it should throw an error with a message "Wrong format!"
  
 #### Bonus
 
