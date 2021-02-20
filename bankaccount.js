@@ -20,19 +20,45 @@ The pin code property can be set but it should be never revealed!
 if the owner wants to change the pin, the input should be validated - 4-6 long digits.
 if the input is invalid it should throw an error with a message "Wrong format!"*/
 
-export class BankAccount {
+
+class Owner {
     firstname;
+    lastname;
+    birthdate;
+    idnumber;
+    constructor(firstname, lastname, birthdate, idnumber) {
+        this.firstname=firstname;
+        this.lastname=lastname;
+        this.birthdate=birthdate;
+        if (typeof this.birthdate !== "number") {
+            throw Error("Input must be a number!");
+        }
+        this.idnumber=idnumber;
+        if (typeof this.idnumber !== "number") {
+            throw Error("Input must be a number!");
+        }
+    }
+    get fullname () {
+        return this.firstname + " " + this.lastname;
+    }
+}
+
+
+class BankAccount extends Owner {
     money=0;
     pin;
-    constructor(firstname, money, pin) {
-        this.firstname=firstname;
+    constructor(firstname, lastname, birthdate, idnumber, money, pin) {
+        super(firstname, lastname, birthdate, idnumber);
         this.money=money;
         this.pin=pin;
     }
     get name () {
-        return "This is" + "" + this.firstname + "'s" + "" + "main account."
+        return "This is" + " " + this.firstname + "'s" + " " + "main account."
     };
 }
 
-
+let account001 = new BankAccount("Attila", "Oszko", 19940430, 5265, 0, 6225);
+console.log(account001.name);
+console.log(account001.fullname);
+console.log(account001.birthdate);
 
